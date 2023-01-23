@@ -16,7 +16,9 @@ exports[`Testing on <SearchPage /> should show with default values 1`] = `
         Searching
       </h4>
       <hr />
-      <form>
+      <form
+        aria-label="form"
+      >
         <input
           autocomplete="off"
           class="form-control"
@@ -46,6 +48,7 @@ exports[`Testing on <SearchPage /> should show with default values 1`] = `
         Search a hero
       </div>
       <div
+        aria-label="no-hero-alert"
         class="alert alert-danger animate__animated animate__fadeIn"
         style="display: none;"
       >
