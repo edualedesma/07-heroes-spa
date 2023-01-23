@@ -4,7 +4,6 @@ import { useForm } from '../../hooks/useForm';
 import { HeroCard } from '../components';
 import { getHeroesByName } from '../helpers';
 
-
 export const SearchPage = () => {
 
   const navigate = useNavigate();
@@ -69,6 +68,7 @@ export const SearchPage = () => {
           <div 
             className="alert alert-primary animate__animated animate__fadeIn" 
             style={{ display: showSearch ? '' : 'none' }}
+            aria-label="search-hero-alert"
           >
             Search a hero
           </div>  
